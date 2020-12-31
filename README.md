@@ -1,4 +1,5 @@
 Contains the programs for ECE 264 and ECE 364 Data Structure & Algorithms I & II in Fall 2019 and Fall 2020
+The descriptions under each program contains what program implementation was used for the program.
 
 Program 1: Linked Lists
 - Stacks
@@ -18,6 +19,7 @@ Program 4: Binary Heap
 - Priority Queue (Binary Heap)
 
 Program 5: Dijkstra's algorithm
+- Linked List
 - Hashtable
 - Priority Queue (Binary Heap)
 - Graph (Dijkstra's algorithm)
