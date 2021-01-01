@@ -8,7 +8,7 @@ Efficiency sort the people based on last name, then first name, and finally Soci
 
 User Instructions
 -
-The program prompts the user for the name of the input file.  The por
+The program prompts the user for the name of the input file.  Then the program displays the CPU time to sort the text file and asks the user for the output file name.  Finally, the program write the sorted output file.
 - T#.txt are the input files (look below for more information)
 - CT#.txt are the sorted and correct file for T#.txt respectively
 
