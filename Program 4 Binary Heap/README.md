@@ -15,6 +15,8 @@ The program prompts the user for entering the capacity of the binary heap.  Then
 
 Technical Details
 -
+*Look at the word document for more specific details of the program*
+
 A class called "heap" provides programmers with the functionality of a priority queue using a binary heap implementation. Each item inserted into the binary heap will specify a unique string id, an integer key, and optionally any pointer. The implementation of the class use pointers to void in order to handle pointers to any type of data. When a heap is declared, a capacity will be passed to its constructor representing the maximum number of items that may be in the heap at one time; the heap will never be allowed to grow past its initial capacity.
 
 Programming Implementation:
