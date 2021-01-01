@@ -13,26 +13,44 @@ Technical Details
 -
 *Look at the word document for more specific details of the program*
 
-An abstract base class called SimpleList that provides some aspects of singly linked list functionality is created. The base class includes protected member functions that provide the ability to insert a node at the start of the list, to insert a node at the end of the list, and to remove a node from the start of the list. A private nested class called Node, which contains one field for data and another field to point to the next node.  The base class includes a private data member to store the name of the list and a public member function to retrieve it. The base class also includes two public pure virtual member functions for push and pop which are in derived classes. Each of the virtual functions is implemented as one-line member function that calls the appropriate member function of the base class (to insert at the start or end of the list, or to remove from the start of the list).
+An abstract base class called SimpleList that provides some aspects of singly linked list functionality is created. The base class includes protected member functions that provide the ability to insert a node at the start of the list, to insert a node at the end of the list, and to remove a node from the start of the list. A private nested class called Node, which contains one field for data (data type value) and another field to point to the next node.  The base class includes a private data member to store the name of the list and a public member function to retrieve it. The base class also includes two public pure virtual member functions for push and pop which are in derived classes. Each of the virtual functions is implemented as one-line member function that calls the appropriate member function of the base class (to insert at the start or end of the list, or to remove from the start of the list).
 
 Two derived classes of SimpleList named Stack and Queue are created. Templates are used for stacks/queues with varying data types: integer, double, string.
 
-Header and trailer nodes are implemented at the start and end of each list respectively.
-
-Non-SimpleList Template Functions:
-- To search for a SimpleList with a specified name, O(N)
-- To print the pushed value
-- To print the popped value 
-
+Header and tail nodes are implemented at the start and end of each list respectively.
 
 Programming Implementation:
 - Linked list
   - Stacks
   - Queues
   
-SimpleList (Linked List) class contains the following functions:
+SimpleList (Linked List) class contains the following:
+- Private
+  - Node Class
+    - Public
+      - getData
+      - getNext (get the pointer of the next node)
+      - setNext (set the pointer of the current node)
+- Public
+  - Push
+  - Pop
+  - isEmpty (check if the SimpleList is empty)
+ - Protected
+  -insert
+  - remove
+  - getHead (get the header node)
+  - getTail (get the tail node)
+
+The constructor of SimpleList initialize the head and tail node and its name.
 
 Derived Classes
+- Stacks
+- Queues
+
+Non-SimpleList Template Functions:
+- To search for a SimpleList with a specified name, O(N)
+- To print the pushed value
+- To print the popped value 
 
 The input file contains a list of commands, one per line. Each command will direct the program to create a stack or a queue, to push a value onto a stack or a queue, or to pop a value from a stack or a queue.
 
