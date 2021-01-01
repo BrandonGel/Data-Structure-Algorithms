@@ -35,9 +35,9 @@ Input/Output file Specifications:
 
 
 T1-T4 file Specification:
-•	T1 will contain approximately (within 1 percent of) 100,000 data objects. Each data object will store a randomly selected last name, a randomly selected first name, and a randomly generated social security number (ssns are guaranteed to be unique within T1).
-•	T2 will contain approximately (within 1 percent of) 1,000,000 data objects. Each data object will store a randomly selected last name, a randomly selected first name, and a randomly generated social security number (ssns are guaranteed to be unique within T2).
-•	T3 will contain the same data objects as T2, but they have already been sorted according to last names and first names (but not according to social security numbers).
-•	T4 will contain approximately (within 1 percent of) 1,000,000 data objects. Each data object will store the same last name and the same first name (both selected randomly, but only once), and a randomly generated social security number (ssns are guaranteed to be unique within T4).
+- T1 will contain approximately (within 1 percent of) 100,000 data objects. Each data object will store a randomly selected last name, a randomly selected first name, and a randomly generated social security number (ssns are guaranteed to be unique within T1).
+- T2 will contain approximately (within 1 percent of) 1,000,000 data objects. Each data object will store a randomly selected last name, a randomly selected first name, and a randomly generated social security number (ssns are guaranteed to be unique within T2).
+- T3 will contain the same data objects as T2, but they have already been sorted according to last names and first names (but not according to social security numbers).
+- T4 will contain approximately (within 1 percent of) 1,000,000 data objects. Each data object will store the same last name and the same first name (both selected randomly, but only once), and a randomly generated social security number (ssns are guaranteed to be unique within T4).
 
 
