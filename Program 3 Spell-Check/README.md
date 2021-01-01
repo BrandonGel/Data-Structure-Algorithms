@@ -37,4 +37,10 @@ The constructor of the hashtable class will use the getPrime function for gettin
 For collision resolution strategies, linear probing will be used.
 
 To process the dictionary, simply insert every word in the dictionary into the hash table. To spell check the document, locate every valid word in the document (keeping track of line numbers), and lookup (i.e., search for) each word in the hash table to see if it is recognized. An average dictionary contains about 50,000 words, but that some might be as large as 1,000,000 words. 
+
+
+Dicitionary File Specifications:
+- Each row exactly one word per line, with no leading or trailing spaces, followed by a single, Unix-style newline character (\n). 
+- Some of the words in the dictionary might not be valid (i.e., they may contain invalid characters). 
+- When loading the dictionary, invalid words, and also words that are too long are ignored. 
  
