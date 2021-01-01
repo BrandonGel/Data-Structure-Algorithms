@@ -48,7 +48,7 @@ Derived Classes
 - Queues
 
 Non-SimpleList Template Functions:
-- To search for a SimpleList with a specified name, O(N)
+- To search for a SimpleList with a specified name, Worst-case O(N)
 - To print the pushed value
 - To print the popped value 
 
