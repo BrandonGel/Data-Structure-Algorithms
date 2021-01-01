@@ -8,8 +8,10 @@ http://www.acmgnyr.org/year1998/prob_g.html
 User Instructions
 -
 The program prompts the user for the name of the name of the document file to check for any valid merge and the name of the output file. 
-in.txt is a sample dictionary file
-out.txt is the correct output file for lyrics.txt
+
+in.txt is a sample input file
+
+out.txt is the correct output file for in.txt
 
 Technical Details
 -
