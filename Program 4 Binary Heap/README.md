@@ -37,6 +37,8 @@ The constructor of the hashtable class will use the getPrime function for gettin
 
 For collision resolution strategies, linear probing will be used.
 
+The program is case insensitive, and all capital letters in both the dictionary and the document are be converted to lowercase immediately upon seeing them.
+
 The remove function in the hashtable will be using lazy-deletion.  The lazy-deleted hash item will be deleted when a rehash function will be called.
 
 Heap contains the following functions:
