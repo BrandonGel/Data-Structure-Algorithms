@@ -1,4 +1,4 @@
-# Spell-Check
+# Merge
 Descriptions
 -
 uses bottom-up dynamic programming to efficiently solve the 1998 regional ACM Programming Contest. 
