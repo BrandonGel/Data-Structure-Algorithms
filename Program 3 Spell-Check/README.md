@@ -6,7 +6,7 @@ Use a dictionary and check for any invalid/long words in another file
 
 User Instructions
 -
-The program prompts the user for the name of the dictionary file, the name of the document file to be spell-checked, and the name of the file where output should be written. The program indicate how long, in seconds, it takes to read the dictionary and how long it takes to spell check the text file, measured in terms of CPU time.
+The program prompts the user for the name of the dictionary file, the name of the document file to be spell-checked, and the name of the output file. The program indicate how long, in seconds, it takes to read the dictionary and how long it takes to spell check the text file, measured in terms of CPU time.
 small.txt is a sample dictionary file
 lyrics.txt is a sample input file to be spell-checked
 out.txt is the correct output file for lyrics.txt
