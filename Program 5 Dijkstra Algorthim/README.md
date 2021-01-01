@@ -17,6 +17,21 @@ Whenever a new vertex is encountered, a hash item is added with the new vertex i
 
 For Dijkstra's algorithm, to find the node correspoinding to each vertex, void pointer parameter of deleteMin will be used to have access to the node immediately
 
+Input File Specifications:
+- Every row in the input file represents an edge in the graph. 
+- Each row consists of two string ids representing the source vertex and destination vertex of the edge (in that order) followed by a positive integer less than a million representing the cost/distance/weight of the edge. 
+- All vertex ids will consist only of lowercase and capital letters and digits.
+- The source vertex of an edge will never be the same as the destination vertex, but it is possible that multiple edges might connect the same vertices.
+- The rows will contain no leading or trailing whitespace, single spaces will separate fields, and all rows will end with a single Unix-style newline character.
+
+Output File Specifications:
+- The output file contians one row for every vertex that exists in the graph, with vertices listed in the same order that they first appear in the input file.
+- Each row in the output file contains a vertex id followed by a colon, a single space, and then the shortest distance from the specified starting vertex to the given vertex.
+- All of these distances are guaranteed to be less than one billion.
+- After the distance, the row contains one space, a left bracket, the path from the starting vertex to the current vertex, a right bracket, and finally a single Unix-style newline character. 
+- Vertices in the path are separated by a comma followed by a single space. There should not be any space or comma before the first vertex in the path (the specified starting vertex) or after the last vertex in the path.
+- If there is no path from the specified starting vertex to any existing vertex in the graph, the corresponding output row contains the vertex id followed by a colon, a single space, and then the text "NO PATH" followed by a single Unix-style newline character. 
+
 Programming Implementation:
 - Linked List 
 - Hashtable
