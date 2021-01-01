@@ -1,4 +1,4 @@
-# DSA1
+# Linked List
 
 Descriptions
 -
