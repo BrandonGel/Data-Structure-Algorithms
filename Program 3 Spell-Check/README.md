@@ -13,6 +13,8 @@ out.txt is the correct output file for lyrics.txt
 
 Technical Details
 -
+*Look at the word document for more specific details of the program*
+
 A program that uses a hash table class to read in a "dictionary" and spell check a "document". For the purposes of this assignment, a valid word is defined as any sequence of valid characters, and the valid characters are letters (capital and lowercase), digits (0 - 9), dashes (-), and apostrophes ('). Every other character is considered a word
 separator.
 
