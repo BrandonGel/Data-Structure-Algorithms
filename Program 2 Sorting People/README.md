@@ -1,4 +1,4 @@
-# DSA1_Prog2
+# Sorting People
 Sorting Names and SSN
 
 Descriptions
