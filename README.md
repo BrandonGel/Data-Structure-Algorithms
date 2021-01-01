@@ -6,10 +6,12 @@ Program 1: Linked Lists
 - Queues
 
 Program 2: Sorting People 
-- Quick sort
-- Insertion sort
-- Selection sort
-- Radix sort
+- Linked List
+- Sorting Algorithms
+  - Quick sort
+  - Insertion sort
+  - Selection sort
+  - Radix sort
 
 Program 3: Spell-Check
 - Hashtable
