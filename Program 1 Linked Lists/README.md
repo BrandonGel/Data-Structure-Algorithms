@@ -34,9 +34,11 @@ SimpleList (Linked List) class contains the following:
 - Public
   - Push
   - Pop
+  - getName (get the name of the SimpleList)
   - isEmpty (check if the SimpleList is empty)
  - Protected
-  -insert
+  - insertStart
+  - insertEnd
   - remove
   - getHead (get the header node)
   - getTail (get the tail node)
