@@ -1,27 +1,27 @@
-# Spell-Check
+# Dijkstra's algorithm
 Descriptions
 -
-Use a dictionary and check for any invalid/long words in another file
-
+The program will determine the shortest path in a specified graph from a specified starting vertex to each other vertex in the graph with Dijkstra's algorithm efficiency with a binary heap implementation. 
 
 User Instructions
 -
-The program prompts the user for the name of the dictionary file, the name of the document file to be spell-checked, and the name of the file where output should be written. The program indicate how long, in seconds, it takes to read the dictionary and how long it takes to spell check the text file, measured in terms of CPU time.
-small.txt is a sample dictionary file
-lyrics.txt is a sample input file to be spell-checked
-out.txt is the correct output file for lyrics.txt
+Your program prompts the user to enter the name of a file specifying the graph.  Once the program is finished reading in the graph, the user will be prompted to enter the id of a starting vertex. The user will be re-prompted until they enter a valid index (i.e., a string id representing a vertex that exists in the graph). The program then applies Dijkstra's algorithm to determine the shortest path to each node from the specified starting vertex. When the algorithm has finished determining the shortest path to each node, your program output the CPU time, in seconds, that was spent executing the algorithm.The program then asks the user for the name of an output file.  If there is no path from the specified starting vertex to any existing vertex in the graph, the output should be "NO PATH"
 
 Technical Details
 -
-A program that uses a hash table class to read in a "dictionary" and spell check a "document". For the purposes of this assignment, a valid word is defined as any sequence of valid characters, and the valid characters are letters (capital and lowercase), digits (0 - 9), dashes (-), and apostrophes ('). Every other character is considered a word
-separator.
+*Look at the word document for more specific details of the program*
 
-A dictionary is defined as a list of recognized words. The dictionary is guaranteed to contain exactly one word per line, with no leading or trailing spaces, followed by a single, Unix-style newline character (\n). Some of the words in the dictionary might not be valid (i.e., they may contain invalid characters). When loading the dictionary, invalid words, and also words that are too long (see below), can optionally be ignored. The dictionary does not specify the meanings of words; it just lists them.
+A graph class is constructed with Dijkstra's algorithm function.  A private nested node/vertex class and an edge class were constructed to store nodes/vertices and edges respectively in the graph. The graph stores all new incoming nodes/vertices a linked list.  A node/vertex class is constructede field of each node/vertice store an adjacency list or linked list of edge for the node.  The edge will contains a pointer to the destination node and the edge cost.
 
-The document will be spell-checked may be any valid text file. Each line in the document will end with a single, Unix-style newline character. When spell checking the document, your program should indicate every unrecognized word, including the line number on which it occurs. Words should only be allowed to grow up to 20 characters. If a word in the document is too long, you should indicate the line number on which this occurs along with the first 20 characters of the word. The first line in the document is line 1. Words in the document that include digits (perhaps in addition to other valid characters) are technically valid but should not be spell checked (i.e., your program should ignore them). In the document, as previously stated, every character that is not a valid word character is a word separator; e.g., the string "abc@def" represents two valid words, "abc" and "def". Therefore, there cannot be invalid words in the document.
+Whenever a new vertex is encountered, a hash item is added with the new vertex id to the hash table with a void pointer to point to the new node. To locate a node corresponding to a source vertex, getPointer member function of the hash table class will be used. The hashtable class will determine whether or not a starting vertex entered by the user is valid.
+
+For Dijkstra's algorithm, to find the node correspoinding to each vertex, void pointer parameter of deleteMin will be used to have access to the node immediately
 
 Programming Implementation:
+- Linked List 
 - Hashtable
+- Heap of Binary Heap (Priority Queue)
+- Graph
 
 Hashtable class contains the following PRIVATE functions:
 - insert
@@ -29,10 +29,42 @@ Hashtable class contains the following PRIVATE functions:
 - hash
 - rehash
 - getPrime
+- getPointer
+- setPointer
+- remove
 
 The constructor of the hashtable class will use the getPrime function for getting a prime number as the capacity of the hashtable.
 
 For collision resolution strategies, linear probing will be used.
 
-To process the dictionary, simply insert every word in the dictionary into the hash table. To spell check the document, locate every valid word in the document (keeping track of line numbers), and lookup (i.e., search for) each word in the hash table to see if it is recognized. An average dictionary contains about 50,000 words, but that some might be as large as 1,000,000 words. 
+The remove function in the hashtable will be using lazy-deletion.  The lazy-deleted hash item will be deleted when a rehash function will be called.
+
+Heap contains the following functions:
+- Public
+  - insert
+  - deleteMin
+  - setKey (providing both increaseKey and decreaseKey)
+  - remove
+- Private
+  - getPos (get position)
+  - percolateUp
+  - percolateDown
+
+The constructor of the heap class accepts an integer  representing the capacity of the binary heap.
+
+All operation are implemented to be average case logartihimic time or better algorithms, O(log N).
+In order to achieve setKey and remove in average-case logarithmic time, the program will use a hashtable which each hash entry or ID includes a pointer to the associated node in the heap allows you to find the item in constant average time, O(1).
+The insert operation use an average-case constant time algorithm, O(1).
+ 
+Graph class contains the following PUBLIC functions and PRIVATE nested classes:
+-Public
+ - insert
+ - contain/find
+ - Dijkstra
+ - printGraph
+-Private
+ - class edge
+ - class node
+ 
+ The constructor of the graph class accepts an integer representing the number of vertices that may be in the graph and hashtable
  
